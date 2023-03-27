@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chart 14 - Area Mark A</title>
+    <title>Horas de mision por año</title>
     <style>
       #chart {
         overflow-y: auto;
@@ -12,10 +12,26 @@
       #chart svg {
         max-width: initial;
       }
+      p {
+        font-family: Arial;
+        text-decoration: none;
+        font-size:12px;
+      }
+      h1 {
+        font-family: Arial;}
+      body{
+        box-sizing: content-box; /* por default */
+        width: 600px;
+        padding: 20px;
+        border: 9px double;
+        margin: 10px;
+      }
     </style>
   </head>
   <body>
-
+    <h1> Horas de mision por año</h1>
+    <p>El grafico muestra para cada año entre 2010 y 2019 la suma de horas de todas las misiones que se llevaron a cabo dicho año. Se muestran ademas cuantas de estas horas corresponden a misiones realizadas por Estados Unidos y cuantas por Rusia.
+    </p>
     <div id="chart"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
