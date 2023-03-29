@@ -51,15 +51,18 @@ function createChart(data, dataUS, dataUSSR){
     x:{
       domain:[d3.min(data, (d) => d.anio_mision),d3.max(data, (d) => d.anio_mision)],
       ticks:11,  
-      label: 'Año de misiones',
+      label: 'Año',
       labelOffset: 40,
+      //format : new DecimalFormat("0.00"),
+      //aux : format.format(d),
+      //aux : aux.replaceAll(",","")
     },
     y:{
       ticks:5,
       grid:true,
-      label: 'Suma de horas de misiones',
+      label: 'Horas (en miles)',
       labelOffset: 50,
-      tickFormat: (d) => d 
+      tickFormat: (d) => d / 1000
     },
     marks: [
       Plot.areaY(data, {
