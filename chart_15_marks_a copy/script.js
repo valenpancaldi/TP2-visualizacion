@@ -55,6 +55,7 @@ function createChart(data, dataUS, dataUSSR){
       labelOffset: 40,
       //format : new DecimalFormat("0.00"),
       //aux : format.format(d),
+
       //aux : aux.replaceAll(",","")
     },
     y:{
@@ -130,13 +131,7 @@ function createChart(data, dataUS, dataUSSR){
         },
         strokeWidth: 1.5
       }),
-      Plot.text(data, {
-        //text: 'country',
-        shape: d => (d.mision_hs_sum == maximo(mision_hs_sum) ? '#000000' : 'transparent'),
-        //fontWeight: 'bold',
-        //fontSize: 17,
-        //dy: -20,
-      }),
+      //Plot.text(stocks, Plot.selectLast({x: "Date", y: "Close", z: "Symbol", text: "Symbol", textAnchor: "start", dx: 3}))
     ],
   });
   
