@@ -15,6 +15,29 @@ function sumMisionHsPorAnio(data) {
   return sumData;
 }
 
+function maximo(data){
+  i = 1
+  maximo = data[0]
+  while ( i < data.length){
+    if (data[i] > maximo){
+      maximo = data[i]
+    }
+  }
+  return maximo
+}
+
+function minimo(data){
+  i = 1
+  minimo = data[0]
+  while ( i < data.length){
+    if (data[i] < minimo){
+      minimo = data[i]
+    }
+  }
+  return minimo
+}
+
+
 function createChart(data, dataUS, dataUSSR){
   let chart = Plot.plot({
     height:500,
@@ -26,18 +49,22 @@ function createChart(data, dataUS, dataUSSR){
       legend:true
     },
     x:{
-      domain:[d3.min(data, (d) => d.anio_mision)-1,d3.max(data, (d) => d.anio_mision)+1],
+      domain:[d3.min(data, (d) => d.anio_mision),d3.max(data, (d) => d.anio_mision)],
       ticks:11,  
+      label: 'Año de misiones',
+      labelOffset: 40,
     },
     y:{
-      ticks:7,
+      ticks:5,
       grid:true,
+      label: 'Suma de horas de misiones',
+      labelOffset: 50,
+      tickFormat: (d) => d 
     },
     marks: [
       Plot.areaY(data, {
         x: "anio_mision", 
         y2: "mision_hs_sum", 
-        //z: "nacionalidad",
         sort: 'mision_hs_sum',
         sort: 'anio_mision',
         color:{
@@ -48,31 +75,8 @@ function createChart(data, dataUS, dataUSSR){
       Plot.lineY(data, {
         x: "anio_mision", 
         y: "mision_hs_sum",
-        //z: "nacionalidad",
         sort: 'mision_hs_sum',
         sort: 'anio_mision',
-        color:{
-          legend:true
-        },
-        strokeWidth: 1.5
-      }),
-      Plot.areaY(dataUS, {
-        x: "anio_mision", 
-        y2: "mision_hs_sum",
-        sort: 'mision_hs_sum',
-        sort: 'anio_mision', 
-        fill: "red",
-        color:{
-          legend:true
-        },
-        fillOpacity: 0.1
-      }),
-      Plot.lineY(dataUS, {
-        x: "anio_mision", 
-        y: "mision_hs_sum",
-        sort: 'mision_hs_sum',
-        sort: 'anio_mision',
-        stroke: "red",
         color:{
           legend:true
         },
@@ -99,15 +103,43 @@ function createChart(data, dataUS, dataUSSR){
         },
         stroke: "green",
         strokeWidth: 1.5
-      })
+        
+      }),
+      Plot.areaY(dataUS, {
+        x: "anio_mision", 
+        y2: "mision_hs_sum",
+        sort: 'mision_hs_sum',
+        sort: 'anio_mision', 
+        fill: "red",
+        color:{
+          legend:true
+        },
+        fillOpacity: 0.1
+      }),
+      Plot.lineY(dataUS, {
+        x: "anio_mision", 
+        y: "mision_hs_sum",
+        sort: 'mision_hs_sum',
+        sort: 'anio_mision',
+        stroke: "red",
+        color:{
+          legend:true
+        },
+        strokeWidth: 1.5
+      }),
+      Plot.text(data, {
+        //text: 'country',
+        shape: d => (d.mision_hs_sum == maximo(mision_hs_sum) ? '#000000' : 'transparent'),
+        //fontWeight: 'bold',
+        //fontSize: 17,
+        //dy: -20,
+      }),
     ],
   });
   
-  // Agregar el título encima del gráfico
   d3.select("#chart")
     .append("div")
     .attr("class", "chart-title")
-    .text("Horas de Misión por Año");
   
   d3.select("#chart").append(() => chart);
 
