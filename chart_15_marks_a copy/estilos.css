@@ -1,0 +1,27 @@
+#total {
+    font-family: Arial;
+    margin-top: -257px;
+    margin-bottom: 250px;
+    margin-right: 500px;
+    margin-left: 582px;
+    font-style: bold;
+    font-size: 14px
+    }
+#usa{
+    font-family: Arial;
+    margin-top: -176px;
+    margin-bottom: 250px;
+    margin-right: 500px;
+    margin-left: 582px;
+    color: red;
+    font-size: 14px;
+        }
+#Rusia {
+    font-family: Arial;
+    margin-top: -225px;
+    margin-bottom: 250px;
+    margin-right: 500px;
+    margin-left: 582px;
+    color: green;
+    font-size: 14px;
+    }

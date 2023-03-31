@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="estilos.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,9 +22,9 @@
         font-family: Arial;} 
       body{
         box-sizing: content-box; /* por default */
-        width: 600px;
+        width: 645px;
         padding: 20px;
-        border: 9px double;
+        border: 0px double;
         margin: 10px;
       }
     </style>
@@ -33,7 +34,9 @@
     <p>El grafico muestra para cada año entre 2010 y 2019 la suma de horas de todas las misiones que se llevaron a cabo dicho año. Se muestran ademas cuantas de estas horas corresponden a misiones realizadas por Estados Unidos y cuantas por Rusia.
     </p>
     <div id="chart"></div>
-
+    <div id="total"> TOTAL</div> 
+    <div id="usa"> EE.UU. </div> 
+    <div id="Rusia"> RUSIA</div> 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>

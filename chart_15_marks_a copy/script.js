@@ -14,7 +14,6 @@ function sumMisionHsPorAnio(data) {
   }));
   return sumData;
 }
-
 function maximo(data){
   i = 1
   maximo = data[0]
@@ -53,24 +52,24 @@ function createChart(data, dataUS, dataUSSR){
       ticks:11,  
       label: 'Año',
       labelOffset: 40,
-      //format : new DecimalFormat("0.00"),
-      //aux : format.format(d),
 
-      //aux : aux.replaceAll(",","")
     },
     y:{
       ticks:5,
       grid:true,
       label: 'Horas (en miles)',
       labelOffset: 50,
-      tickFormat: (d) => d / 1000
+      tickFormat: (d) => d / 1000 + "M",
+      zero: false,
     },
     marks: [
+
       Plot.areaY(data, {
         x: "anio_mision", 
         y2: "mision_hs_sum", 
         sort: 'mision_hs_sum',
         sort: 'anio_mision',
+        name: "Total",
         color:{
           legend:true
         },
@@ -81,6 +80,7 @@ function createChart(data, dataUS, dataUSSR){
         y: "mision_hs_sum",
         sort: 'mision_hs_sum',
         sort: 'anio_mision',
+        name: "Total",
         color:{
           legend:true
         },
@@ -91,6 +91,7 @@ function createChart(data, dataUS, dataUSSR){
         y2: "mision_hs_sum",
         sort: 'mision_hs_sum',
         sort: 'anio_mision', 
+        name: "U.S.S.R/Rusia",
         fill: "green",
         color:{
           legend:true
@@ -102,6 +103,7 @@ function createChart(data, dataUS, dataUSSR){
         y: "mision_hs_sum",
         sort: 'mision_hs_sum',
         sort: 'anio_mision',
+        name: "U.S.S.R/Rusia",
         color:{
           legend:true
         },
@@ -114,6 +116,7 @@ function createChart(data, dataUS, dataUSSR){
         y2: "mision_hs_sum",
         sort: 'mision_hs_sum',
         sort: 'anio_mision', 
+        name: "EE.UU.",
         fill: "red",
         color:{
           legend:true
@@ -126,13 +129,19 @@ function createChart(data, dataUS, dataUSSR){
         sort: 'mision_hs_sum',
         sort: 'anio_mision',
         stroke: "red",
+        name: "EE.UU.",
         color:{
           legend:true
         },
         strokeWidth: 1.5
       }),
-      //Plot.text(stocks, Plot.selectLast({x: "Date", y: "Close", z: "Symbol", text: "Symbol", textAnchor: "start", dx: 3}))
-    ],
+      Plot.dot(data, {
+        x: "anio_mision" ,      // feature for the x channel
+        y: "mision_hs_sum",     // feature for the y channel
+        // feature for the stroke
+      }),
+      ],
+      
   });
   
   d3.select("#chart")
