@@ -35,9 +35,11 @@
         font-family: Arial;
         text-decoration: none;
         font-size:12px;
+        color: gray;
       }
       h1 {
-        font-family: Arial;} 
+        font-family: Arial;
+      } 
       body{
         box-sizing: content-box; /* por default */
         width: 645px;
