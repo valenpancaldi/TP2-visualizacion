@@ -34,7 +34,9 @@ function createChart(yearSelected) {
     grid: true,
     line: true,
     nice: true,
-    zero: true,
+    zero: false,
+    marginBottom:45,
+    marginTop:30,
     height: 500,
     width: 500,
     marks: [
@@ -58,9 +60,12 @@ function createChart(yearSelected) {
     },
     x: {
       domain: valuesDomainX,
+      label: 'Nacionalidad',
     },
     y: {
       domain: valuesDomainY,
+      label: 'Edad',
+      ticks:4,
       //nice: true,
       //tickCount: Math.floor((valuesDomainY[1] - valuesDomainY[0]) / 2) + 1, //calcula el número de ticks basado en el rango deseado
     },
