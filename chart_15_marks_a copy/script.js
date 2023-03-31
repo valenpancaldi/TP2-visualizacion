@@ -25,17 +25,6 @@ function maximo(data){
   return maximo
 }
 
-function minimo(data){
-  i = 1
-  minimo = data[0]
-  while ( i < data.length){
-    if (data[i] < minimo){
-      minimo = data[i]
-    }
-  }
-  return minimo
-}
-
 
 function createChart(data, dataUS, dataUSSR){
   let chart = Plot.plot({
