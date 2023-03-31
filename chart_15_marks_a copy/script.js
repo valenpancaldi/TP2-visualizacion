@@ -52,6 +52,8 @@ function createChart(data, dataUS, dataUSSR){
       ticks:11,  
       label: 'Año',
       labelOffset: 40,
+      tickFormat: d3.format("#.0f"),
+      
 
     },
     y:{
@@ -134,11 +136,6 @@ function createChart(data, dataUS, dataUSSR){
           legend:true
         },
         strokeWidth: 1.5
-      }),
-      Plot.dot(data, {
-        x: "anio_mision" ,      // feature for the x channel
-        y: "mision_hs_sum",     // feature for the y channel
-        // feature for the stroke
       }),
       ],
       
