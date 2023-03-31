@@ -50,7 +50,7 @@
     box-sizing: content-box; /* por default */
     width: 580px;
     padding: 5px;
-    border: 2px outset;
+    border: 0px outset;
     margin: 5px;
   }
   h6{
