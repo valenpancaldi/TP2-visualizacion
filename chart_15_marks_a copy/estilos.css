@@ -5,25 +5,25 @@
     margin-right: 500px;
     margin-left: 582px;
     font-style: bold;
-    font-size: 14px
+    font-size: 12px
     }
 #usa{
     font-family: Arial;
-    margin-top: -176px;
+    margin-top: -173px;
     margin-bottom: 250px;
     margin-right: 500px;
     margin-left: 582px;
     color: red;
-    font-size: 14px;
+    font-size: 12px;
         }
 #Rusia {
     font-family: Arial;
     margin-top: -225px;
-    margin-bottom: 250px;
+    margin-bottom: 253px;
     margin-right: 500px;
     margin-left: 582px;
     color: green;
-    font-size: 14px;
+    font-size: 12px;
     }
     #chart {
         overflow-y: auto;
@@ -39,6 +39,7 @@
       }
       h1 {
         font-family: Arial;
+        font-size:30px;
       } 
       body{
         box-sizing: content-box; /* por default */
@@ -47,3 +48,22 @@
         border: 0px double;
         margin: 10px;
       }
+#maximo{
+  font-family: Arial;
+  font-size:14px;
+  color: grey;
+  margin-top: -0px;
+  margin-left: 460px;
+}
+#anio{
+  font-family: Arial;
+  font-size:20px;
+  font-weight: bold;
+  margin-top: -645px;
+  margin-left: 462px;
+}
+#flecha{
+  margin-top: -30px;
+  margin-left: 407px;
+  color: grey;
+}
