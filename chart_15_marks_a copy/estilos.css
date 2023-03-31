@@ -25,3 +25,23 @@
     color: green;
     font-size: 14px;
     }
+    #chart {
+        overflow-y: auto;
+      }
+      #chart svg {
+        max-width: initial;
+      }
+      p {
+        font-family: Arial;
+        text-decoration: none;
+        font-size:12px;
+      }
+      h1 {
+        font-family: Arial;} 
+      body{
+        box-sizing: content-box; /* por default */
+        width: 645px;
+        padding: 20px;
+        border: 0px double;
+        margin: 10px;
+      }
