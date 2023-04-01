@@ -28,9 +28,6 @@ function changeValueInput(value) {
 function createChart(yearSelected) {
   let dataFilter = data.filter(d => d.anio_mision == yearSelected)
   chart = Plot.plot({
-    r: {
-      range:[1,40]
-    },
     grid: true,
     line: true,
     nice: true,
@@ -68,6 +65,10 @@ function createChart(yearSelected) {
       ticks:4,
       //nice: true,
       //tickCount: Math.floor((valuesDomainY[1] - valuesDomainY[0]) / 2) + 1, //calcula el número de ticks basado en el rango deseado
+    },
+    r: {
+      range:[1,40],
+      legend:true,
     },
   })
 

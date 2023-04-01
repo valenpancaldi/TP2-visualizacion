@@ -31,7 +31,7 @@
     box-sizing: content-box; /* por default */
     width: 580px;
     padding: 6px;
-    border: 5px outset;
+    border: 0px outset;
     margin: 5px;
   }
   h5{
@@ -43,8 +43,9 @@
     box-sizing: content-box; /* por default */
     width: 580px;
     padding: 5px;
-    border: 4px outset;
-    margin: 5px;
+    border: 0px outset;
+    margin: 0px;
+    margin-top: -30px;
   }
   #cuerpo{
     box-sizing: content-box; /* por default */
