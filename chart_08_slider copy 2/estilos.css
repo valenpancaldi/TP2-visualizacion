@@ -39,14 +39,6 @@
     font-style:none;
     font-size:12px;
   }
-  #chart{
-    box-sizing: content-box; /* por default */
-    width: 580px;
-    padding: 5px;
-    border: 0px outset;
-    margin: 0px;
-    margin-top: -30px;
-  }
   #cuerpo{
     box-sizing: content-box; /* por default */
     width: 580px;
@@ -61,5 +53,5 @@
   }
   #fuente{
     margin-top: -63px;
-    margin-left: 530px;
+    margin-left: 480px;
   }
