@@ -46,7 +46,7 @@ function createChart(yearSelected) {
     ],
     color: {
       domain: ['femenino', 'masculino'],
-      range:['red','blue'],
+      range:['magenta','blue'],
       legend: true,
       className: 'legend-clusters',
     },

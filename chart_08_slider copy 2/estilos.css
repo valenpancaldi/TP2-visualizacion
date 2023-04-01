@@ -11,15 +11,16 @@
   }
   #selector {
     display: flex;
+    width: 500px; 
+    margin: 30;
   }
   #selector p {
     font-size: 12px;
-  }
-  .legend-title {
-    margin-right: 10px;
+    margin: 30;
   }
   p {
     font-size:12px;
+    margin: 30;
   }
   li {
     font-size:12px;
@@ -29,7 +30,7 @@
     width: 580px;
     padding: 6px;
     border: 0px outset;
-    margin: 5px;
+    margin: 30px;
     font-size: 36px;
   }
   h5{
@@ -41,17 +42,13 @@
     width: 580px;
     padding: 5px;
     border: 0px outset;
-    margin: 5px;
+    margin: 30px;    
   }
   h6{
     font-size:12px;
     color:rgba(128, 128, 128, 0.548)
   }
-  #fuente{
-    margin-top: -63px;
-    margin-left: 480px;
-  }
-  a{
+a{
     font-weight: bold;
     margin-left: 90%;
     margin-top: 30%;

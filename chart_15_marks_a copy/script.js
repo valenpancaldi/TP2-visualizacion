@@ -83,7 +83,7 @@ function createChart(data, dataUS, dataUSSR){
         sort: 'mision_hs_sum',
         sort: 'anio_mision', 
         name: "U.S.S.R/Rusia",
-        fill: "green",
+        fill: "blue",
         color:{
           legend:true
         },
@@ -98,7 +98,7 @@ function createChart(data, dataUS, dataUSSR){
         color:{
           legend:true
         },
-        stroke: "green",
+        stroke: "blue",
         strokeWidth: 1.5
         
       }),
@@ -108,7 +108,7 @@ function createChart(data, dataUS, dataUSSR){
         sort: 'mision_hs_sum',
         sort: 'anio_mision', 
         name: "EE.UU.",
-        fill: "red",
+        fill: "magenta",
         color:{
           legend:true
         },
@@ -119,7 +119,7 @@ function createChart(data, dataUS, dataUSSR){
         y: "mision_hs_sum",
         sort: 'mision_hs_sum',
         sort: 'anio_mision',
-        stroke: "red",
+        stroke: "magenta",
         name: "EE.UU.",
         color:{
           legend:true

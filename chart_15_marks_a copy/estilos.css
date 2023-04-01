@@ -1,5 +1,4 @@
 #total {
-    font-family: Arial;
     margin-top: -257px;
     margin-bottom: 250px;
     margin-right: 500px;
@@ -8,21 +7,19 @@
     font-size: 12px
     }
 #usa{
-    font-family: Arial;
     margin-top: -173px;
     margin-bottom: 250px;
     margin-right: 500px;
     margin-left: 582px;
-    color: red;
+    color: magenta;
     font-size: 12px;
         }
 #Rusia {
-    font-family: Arial;
     margin-top: -225px;
     margin-bottom: 253px;
     margin-right: 500px;
     margin-left: 582px;
-    color: green;
+    color: blue;
     font-size: 12px;
     }
     #chart {
@@ -30,15 +27,14 @@
       }
       #chart svg {
         max-width: initial;
+        background-color: rgb(12, 3, 24);
       }
       p {
-        font-family: Arial;
         text-decoration: none;
         font-size:12px;
-        color: gray;
+        color: rgb(140, 133, 149);
       }
       h1 {
-        font-family: Arial;
         font-size:30px;
       } 
       body{
@@ -49,14 +45,12 @@
         margin: 10px;
       }
 #maximo{
-  font-family: Arial;
   font-size:14px;
-  color: grey;
+  color: rgb(140, 133, 149);
   margin-top: -0px;
   margin-left: 460px;
 }
 #anio{
-  font-family: Arial;
   font-size:20px;
   font-weight: bold;
   margin-top: -645px;
@@ -65,14 +59,31 @@
 #flecha{
   margin-top: -30px;
   margin-left: 407px;
-  color: grey;
+  color: rgb(140, 133, 149);
 }
 h6{
-  font-family: Arial;
   font-size:12px;
-  color:rgba(128, 128, 128, 0.548)
+  color:rgb(140, 133, 149);
 }
 #fuente{
   margin-top: 500px;
   margin-left: 530px;
+}
+h1{
+  font-size: 32px;
+}
+a{
+  font-weight: bold;
+  margin-left: 90%;
+  margin-top: 30%;
+  font-size: 10;
+}
+#todo{
+  margin-right: auto;
+   margin-left: auto;
+}
+*{
+  font-family:  'Lucida Grande';
+  background-color: rgb(12, 3, 24);
+  color:rgb(226, 213, 242);
 }
