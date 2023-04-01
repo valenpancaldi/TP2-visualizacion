@@ -23,8 +23,6 @@ function changeValueInput(value) {
   resultado.textContent = value
 }
 
-
-
 function createChart(yearSelected) {
   let dataFilter = data.filter(d => d.anio_mision == yearSelected)
   chart = Plot.plot({
