@@ -1,11 +1,35 @@
+
 h1{
     color:rgb(226, 213, 242);
-    font-size: 60px;
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Plastic', sans-serif;
 }
 a{
     color:rgb(226, 213, 242)
 
 }
+img {
+    width: 50%;
+    height: auto;
+    float: left;
+  }
+  
+  .img-container {
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+  
+  .text-container {
+    width: 50%;
+    height: auto;
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+   
+
 *{
     background-color: rgb(12, 3, 24);;
     color:rgb(226, 213, 242);

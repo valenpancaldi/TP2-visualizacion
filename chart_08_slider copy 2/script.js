@@ -33,7 +33,7 @@ function createChart(yearSelected) {
     marginBottom:45,
     marginTop:30,
     height: 500,
-    width: 500,
+    width: 560,
     marks: [
       Plot.dot(dataFilter, {
         x: 'nacionalidad',

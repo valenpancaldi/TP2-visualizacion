@@ -31,11 +31,11 @@
       }
       p {
         text-decoration: none;
-        font-size:12px;
+        font-size:14px;
         color: rgb(140, 133, 149);
       }
       h1 {
-        font-size:30px;
+        font-size:36px;
       } 
       body{
         box-sizing: content-box; /* por default */
