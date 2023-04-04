@@ -1,4 +1,11 @@
 h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 120%;
+  font-weight: 600;
+  
+}
   box-sizing: content-box; /* por default */
   width: 580px;
   padding: 6px;

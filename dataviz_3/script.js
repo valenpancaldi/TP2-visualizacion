@@ -11,26 +11,27 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     console.log(data2);
     var chart = Plot.plot({
         marks: [
-        Plot.barX(data2, {
-            y: 'ocupacion',
-            x: 'cantidad',
-        }),
-        Plot.text(data2, {x: "cantidad", y: "ocupacion", text: d => (d.cantidad), dx:+10}),
+        Plot.barX(data2, {y: 'ocupacion',x: 'cantidad',}),
+        Plot.text(data2, {x: "cantidad", y: "ocupacion", text: d => (d.cantidad), dx:+15}),
         ],
         y: {
             domain: d3.sort(data2, (a, b) => d3.descending(a.cantidad, b.cantidad)).map(d => d.ocupacion),
             label: ""
-            
-          },
+            },
+
         x: {
             label:"",
             axis: null,
         },
-        height: 200,
-        marginLeft: 150,
-        marginRight: 150,
-        innerWidth: 600 ,
+        height: 220,
+        marginLeft: 230,
+        marginRight: 30,
+        
+        style:{
+         fontSize: 20,
+        }
     })
+    
 
     d3.select('#chart').append(() => chart)
 })
