@@ -1,15 +1,27 @@
-
-h1{
-    color:rgb(226, 213, 242);
-    font-size: 100px;
+@font-face {
+    font-family: 'PlasticSansFreebie';
+    src: url('PlasticSansFreebie-Outline.otf') format('opentype');
+  }
+  
+  h1{
+    color: rgb(226, 213, 242);
+    font-size: 120px;
     text-align: center;
-    font-family: 'Plastic', sans-serif;
-}
-a{
-    color:rgb(226, 213, 242)
-
-}
-img {
+    font-family: 'PlasticSansFreebie', sans-serif;
+  }
+  h5{
+      color: rgba(226, 213, 242, 0.5);
+      margin: 10px;
+      margin-bottom: 30px;
+      font-size: 12px;
+  }
+  
+  a{
+    color: rgb(226, 213, 242);
+    font-size: 20px;
+  }
+  
+  img {
     width: 50%;
     height: auto;
     float: left;
@@ -19,6 +31,104 @@ img {
     width: 100%;
     height: auto;
     float: left;
+    justify-content:flex-start;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; 
+  }
+  .img-containerD {
+    width: 100%;
+    height: auto;
+    float: right;
+    justify-content:flex-start;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; 
+  }
+  
+  .img-link-container {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+  }
+  
+  .link-img {
+    margin-left: 100px;
+    align-self: center;
+    border-radius: 50px;
+    border: 4px solid rgba(226, 213, 242, 0.5);
+    padding: 15px 25px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(122, 86, 169, 0.444);
+  }
+  .link-imgD {
+    margin-right: 100px;
+    align-self: center;
+    border-radius: 50px;
+    border: 4px solid rgba(226, 213, 242, 0.5);
+    padding: 15px 25px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(122, 86, 169, 0.444);
+  }
+  .link-img:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -400%;
+    width: 500%;
+    height: 100%;
+    background-color: rgba(226, 213, 242, 0.2);
+    transform: skewX(45deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .link-img:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 200%;
+    width: 500%;
+    height: 100%;
+    background-color: rgba(226, 213, 242, 0.2);
+    transform: skewX(-45deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .link-img:hover {
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  .link-imgD:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -400%;
+    width: 500%;
+    height: 100%;
+    background-color: rgba(226, 213, 242, 0.2);
+    transform: skewX(45deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .link-imgD:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 200%;
+    width: 500%;
+    height: 100%;
+    background-color: rgba(226, 213, 242, 0.2);
+    transform: skewX(-45deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .link-imgD:hover {
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.5);
   }
   
   .text-container {
@@ -28,10 +138,9 @@ img {
     display: flex;
     align-items: center;
   }
-   
-
-*{
+  
+  *{
     background-color: rgb(12, 3, 24);;
     color:rgb(226, 213, 242);
     font-family:  'Lucida Grande';
-}
+  }
