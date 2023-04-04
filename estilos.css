@@ -26,7 +26,10 @@
     height: auto;
     float: left;
   }
-
+p a {
+  color: rgba(226, 213, 242, 0.5);
+  text-align: center;
+}
   
   .img-container {
     width: 100%;
