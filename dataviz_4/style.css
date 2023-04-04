@@ -17,6 +17,11 @@ p {
 #chart{
     font-size: 200%,
 }
+
+.my-link {
+  color: rgba(128, 128, 128, 0.548);
+}
+
 #fuente{
   margin-top: 500px;
   margin-left: 530px;

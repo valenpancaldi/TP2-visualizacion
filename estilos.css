@@ -26,6 +26,7 @@
     height: auto;
     float: left;
   }
+
   
   .img-container {
     width: 100%;
@@ -43,7 +44,8 @@
     justify-content:flex-start;
     display: flex;
     align-items: center;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
+    
   }
   
   .img-link-container {
