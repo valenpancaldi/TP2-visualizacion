@@ -28,7 +28,7 @@
   }
 p a {
   color: rgba(226, 213, 242, 0.5);
-  text-align: center;
+  bottom: 0px;
 }
   
   .img-container {

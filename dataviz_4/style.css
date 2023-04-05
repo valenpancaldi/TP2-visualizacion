@@ -1,6 +1,5 @@
 h1{
     text-align: center;
-    text-decoration: underline;
     font-weight: 600; 
     font-size:36px; 
 }
@@ -12,7 +11,9 @@ p {
 #chart{
     align-content: center;
     text-transform: capitalize;
-    font-weight: 600;}
+    font-weight: 600;
+    margin-left: 10%;
+  }
 
 #chart{
     font-size: 200%,
