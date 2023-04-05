@@ -1,5 +1,4 @@
-
-  h1 {
+h1 {
     text-align: left;
     letter-spacing: 2px;
     box-sizing: content-box; /* por default */
@@ -11,8 +10,8 @@
   p {
     text-align: left;
     text-decoration: none;
-    font-size: large;
-    color:rgb(226, 213, 242);
+    font-size: 14px;
+    color: rgb(140, 133, 149);
     margin-left: 15px;
   
   }
@@ -34,9 +33,10 @@
     margin-top: 30%;
     font-size: 16px;
   }
+
   *{
     font-family:  'Lucida Grande';
     background-color: rgb(12, 3, 24);
     color:rgb(226, 213, 242);
-    font-size: 18px;
+    font-size: 14px;
   }
