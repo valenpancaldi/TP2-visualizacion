@@ -9,12 +9,12 @@
     margin-top:13px;
   }
   p {
+    text-align: left;
+    text-decoration: none;
     font-size: large;
     color: rgb(140, 133, 149);
   
   }
-
-
 
 #chart {
     display: grid;
@@ -36,9 +36,9 @@
  
 a{
     font-weight: bold;
-    margin-left: 90%;
     margin-top: 30%;
     font-size: 10;
+    margin-left: 200%;
   }
   *{
     font-family:  'Lucida Grande';

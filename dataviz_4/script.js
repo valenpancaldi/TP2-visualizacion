@@ -32,20 +32,15 @@ d3.csv("astronautas.csv", d3.autoType).then(data => {
         x: 'nacionalidad',
         y: 'cantidad'
     }),
-      Plot.text(data2, {
-      x: "nacionalidad",
-      y: "cantidad",
-      text: d=> d.cantidad,
-      dx:+15,
-      }),
-    
+     
+  
       Plot.ruleY([0]),
       Plot.barY(data2, {x: "nacionalidad", y: "frequency",insetLeft: 0.5 ,insetRight: 0.5}),
       Plot.dot(data2, {
         x: 'nacionalidad', 
         y: 'cantidad', 
         fill: 'white', 
-        r:4
+        r:5
       }),
         
     ]
