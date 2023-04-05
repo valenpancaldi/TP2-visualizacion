@@ -11,12 +11,18 @@ d3.csv("astronautas.csv", d3.autoType).then(data => {
 
   var chart= Plot.plot({
     x: {
+<<<<<<< HEAD
       label: "",
       padding: -1
+=======
+      label: "Pais",
+      padding: -1,
+      labelOffset: 35,
+>>>>>>> 0359ce849041e0b271eb72e5216a12fbbc9842fc
     },
     y: {
       label: "Cantidad",
-      grid: true
+      grid: true,
     },
     width:1800,
     height: 800,
@@ -30,14 +36,22 @@ d3.csv("astronautas.csv", d3.autoType).then(data => {
     marks: [
       Plot.ruleX(data2, {
         x: 'nacionalidad',
-        y: 'cantidad'
+        y: 'cantidad',
+        strokeWidth: 3,
     }),
-      Plot.text(data2, {
+    Plot.text(data2, {
       x: "nacionalidad",
       y: "cantidad",
+<<<<<<< HEAD
       text: d=> d.cantidad,
       dx:+15,
       }),
+=======
+      text: d =>  d.cantidad,
+      fontSize: 12,
+      dy: -10,
+    }),
+>>>>>>> 0359ce849041e0b271eb72e5216a12fbbc9842fc
     
       Plot.ruleY([0]),
       Plot.barY(data2, {x: "nacionalidad", y: "frequency",insetLeft: 0.5 ,insetRight: 0.5}),

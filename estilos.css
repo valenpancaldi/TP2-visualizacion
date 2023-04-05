@@ -26,6 +26,10 @@
     height: auto;
     float: left;
   }
+p a {
+  color: rgba(226, 213, 242, 0.5);
+  bottom: 0px;
+}
   
   .img-container {
     width: 100%;
@@ -43,7 +47,8 @@
     justify-content:flex-start;
     display: flex;
     align-items: center;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
+    
   }
   
   .img-link-container {
