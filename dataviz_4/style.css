@@ -9,14 +9,13 @@ h1 {
 p {
   text-align: left;
   text-decoration: none;
-  font-size: large;
+  font-size:14px;
   color: rgb(140, 133, 149);
 
 }
-
 a{
   font-weight: bold;
-  margin-left: 0px;
+  margin-left: 90%;
   margin-top: 30%;
   font-size: 16px;
 }
@@ -38,12 +37,10 @@ body{
 }
 
 #EEUU{
-
   font-size:20px;
   font-weight: bold;
   margin-top: -475px;
   margin-left: 340px;
-
 }
 
 .legend-title {

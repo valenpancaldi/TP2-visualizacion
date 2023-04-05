@@ -38,7 +38,6 @@
       h1 {
         font-size:36px;
       } 
-      /*chequear si queda mejor sin esto*/
       body{
         box-sizing: content-box; /* por default */
         width: 645px;
@@ -72,14 +71,12 @@ h6{
   margin-left: 530px;
 }
 
-
 a{
   font-weight: bold;
   margin-left: 90%;
   margin-top: 30%;
   font-size: 16px;
 }
-
 
 #todo{
   margin-right: auto;
