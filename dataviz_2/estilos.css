@@ -24,6 +24,7 @@
     }
     #chart {
         overflow-y: auto;
+        
       }
       #chart svg {
         max-width: initial;
@@ -37,6 +38,7 @@
       h1 {
         font-size:36px;
       } 
+      /*chequear si queda mejor sin esto*/
       body{
         box-sizing: content-box; /* por default */
         width: 645px;
@@ -69,15 +71,16 @@ h6{
   margin-top: 500px;
   margin-left: 530px;
 }
-h1{
-  font-size: 32px;
-}
+
+
 a{
   font-weight: bold;
   margin-left: 90%;
   margin-top: 30%;
-  font-size: 10;
+  font-size: 16px;
 }
+
+
 #todo{
   margin-right: auto;
   margin-left: auto;

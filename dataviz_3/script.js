@@ -26,7 +26,6 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         height: 200,
         marginLeft: 240,
         marginRight: 25,
-        
         style:{
          fontSize: 18,
         }

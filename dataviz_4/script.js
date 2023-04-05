@@ -16,24 +16,26 @@ d3.csv("astronautas.csv", d3.autoType).then(data => {
     },
     y: {
       label: "Cantidad",
-      grid: true
+      grid: true,
+      
     },
+  
     width:1800,
-    height: 800,
+    height: 850,
     marginLeft: 70 ,
     marginRight: 150,
 
     style:{
-      fontSize: 24,
+      fontSize: 23,
      },
     
     marks: [
       Plot.ruleX(data2, {
         x: 'nacionalidad',
-        y: 'cantidad'
+        y: 'cantidad',
+        strokeWidth: 3,
     }),
      
-  
       Plot.ruleY([0]),
       Plot.barY(data2, {x: "nacionalidad", y: "frequency",insetLeft: 0.5 ,insetRight: 0.5}),
       Plot.dot(data2, {

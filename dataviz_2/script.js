@@ -48,8 +48,8 @@ function createChart(data, dataUS, dataUSSR){
     y:{
       ticks:5,
       grid:true,
-      label: 'Horas (en miles)',
-      labelOffset: 50,
+      label: 'Horas',
+      labelOffset: 35,
       tickFormat: (d) => d / 1000 + "M",
       zero: false,
     },
