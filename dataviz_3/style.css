@@ -1,5 +1,4 @@
 
-
   h1 {
     text-align: left;
     letter-spacing: 2px;
@@ -7,58 +6,27 @@
     width: 800px;
     font-size: 36px;
     margin-top:13px;
+    margin-left: 15px;
   }
   p {
-<<<<<<< HEAD
-    font-size: large;
-=======
     text-align: left;
     text-decoration: none;
-    font-size: 12px;
->>>>>>> 0359ce849041e0b271eb72e5216a12fbbc9842fc
+    font-size: large;
     color: rgb(140, 133, 149);
+    margin-left: 15px;
   
   }
 
-
-
 #chart {
-<<<<<<< HEAD
     display: grid;
-    width: 10000%;
     text-transform: capitalize;
     font-weight: 500;
-=======
-    overflow-y:auto;
-    place-content: left;
-    text-align:center;
-    width: 110%;
-    text-transform: capitalize;
-    font-weight: 500;
-    margin-left: -80px;
->>>>>>> 0359ce849041e0b271eb72e5216a12fbbc9842fc
     
   }
   #chart svg {
     background-color: rgb(12, 3, 24);
   }
 
-  body{
-    box-sizing: content-box; /* por default */
-    width: 645px;
-    padding: 10px;
-    margin: 10px;
-  }
- 
-<<<<<<< HEAD
-=======
-  
-  
-  .legend-title {
-    margin-right: 10px;
-
-  }
->>>>>>> 0359ce849041e0b271eb72e5216a12fbbc9842fc
 a{
     font-weight: bold;
     margin-left: 90%;
@@ -69,5 +37,5 @@ a{
     font-family:  'Lucida Grande';
     background-color: rgb(12, 3, 24);
     color:rgb(226, 213, 242);
-    font-size: 12px;
+    font-size: 20px;
   }
