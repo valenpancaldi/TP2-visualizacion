@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 h1 {
   text-align: left;
@@ -48,62 +47,3 @@ a{
   background-color: rgb(12, 3, 24);
   color:rgb(226, 213, 242);
 }
-=======
-h1{
-    text-align: center;
-    font-weight: 600; 
-    font-size:36px; 
-}
-p {
-  text-decoration: none;
-  font-size:14px;
-  color: rgb(140, 133, 149);
-}
-#chart{
-    align-content: center;
-    text-transform: capitalize;
-    font-weight: 600;
-    margin-left: 10%;
-  }
-
-#chart{
-    font-size: 200%,
-}
-
-
-#fuente{
-  margin-top: 500px;
-  margin-left: 530px;
-}
-#chart {
-    overflow-y:auto
-    
-  }
-  #chart svg {
-    max-width: max-content;
-    background-color: rgb(12, 3, 24);
-  }
-  #input {
-    width: 400px;
-  }
- 
-  .legend-title {
-    margin-right: 10px;
-
-  }
-  a{
-    font-weight: bold;
-    margin-left: 90%;
-    margin-top: 30%;
-    font-size: 10;
-  }
-  #todo{
-    margin-right: auto;
-    margin-left: auto;
-  }
-  *{
-    font-family:  'Lucida Grande';
-    background-color: rgb(12, 3, 24);
-    color:rgb(226, 213, 242);
-  }
->>>>>>> 0359ce849041e0b271eb72e5216a12fbbc9842fc
