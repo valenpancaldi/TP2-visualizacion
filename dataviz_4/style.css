@@ -28,8 +28,16 @@ body{
   box-sizing: content-box; /* por default */
   width: 1000px;
   padding: 20px;
-  border: 0px double;
-  margin: 0px;
+
+}
+
+#EEUU{
+
+  font-size:20px;
+  font-weight: bold;
+  margin-top: -475px;
+  margin-left: 340px;
+
 }
 
 .legend-title {
