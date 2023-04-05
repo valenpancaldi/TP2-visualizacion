@@ -6,26 +6,21 @@
     box-sizing: content-box; /* por default */
     width: 800px;
     font-size: 36px;
-    margin-left:-7px;
     margin-top:13px;
   }
   p {
-    text-align: left;
-    text-decoration: none;
     font-size: large;
     color: rgb(140, 133, 149);
   
   }
 
+
+
 #chart {
-    overflow-y:auto;
-    place-content: left;
-    text-align:center;
     display: grid;
-    width: 100%;
+    width: 10000%;
     text-transform: capitalize;
-    font-weight: 500
-    
+    font-weight: 500;
     
   }
   #chart svg {
@@ -35,15 +30,10 @@
   body{
     box-sizing: content-box; /* por default */
     width: 645px;
-    padding: 20px;
-    border: 0px double;
+    padding: 10px;
     margin: 10px;
   }
  
-  .legend-title {
-    margin-right: 10px;
-
-  }
 a{
     font-weight: bold;
     margin-left: 90%;

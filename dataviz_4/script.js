@@ -9,8 +9,6 @@ d3.csv("astronautas.csv", d3.autoType).then(data => {
       }
     })
 
-    console.log(data2);
-
   var chart= Plot.plot({
     x: {
       label: "",
@@ -20,13 +18,13 @@ d3.csv("astronautas.csv", d3.autoType).then(data => {
       label: "Cantidad",
       grid: true
     },
-    width:1200,
-    height: 700,
-    marginLeft: 25 ,
+    width:1800,
+    height: 800,
+    marginLeft: 70 ,
     marginRight: 150,
 
     style:{
-      fontSize: 15,
+      fontSize: 24,
      },
     
     marks: [

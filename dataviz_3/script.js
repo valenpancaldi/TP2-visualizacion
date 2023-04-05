@@ -23,23 +23,19 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             label:"",
             axis: null,
         },
-        height: 220,
+        height: 200,
         marginLeft: 270,
-        marginRight: 30,
+        marginRight: 25,
         
         style:{
          fontSize: 20,
         }
     })
     
-
     d3.select('#chart').append(() => chart)
 })
 
 
-function changeValueInput(value) {
-  const resultado = document.querySelector('#value-input')
-  resultado.textContent = value
-}
+
 
 
